@@ -1,4 +1,4 @@
-from src import logger
+from {{ cookiecutter.module_name }} import logger
 
 
 def main():

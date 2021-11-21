@@ -110,6 +110,4 @@ config.env
 *.pem
 
 # doit
-/.doit.db.bak
-/.doit.db.dat
-/.doit.db.dir
+*.doit.db*

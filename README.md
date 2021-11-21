@@ -32,8 +32,7 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/iKintosh/cookiecutter-data-science
-
+    cookiecutter https://github.com/krjoha/cookiecutter-data-science     
 
 [![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
 
@@ -52,6 +51,7 @@ The directory structure of your new project looks like this:
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
+    ├── docs               <- Documentation
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
@@ -68,8 +68,8 @@ The directory structure of your new project looks like this:
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
+    ├── {{ cookiecutter.module_name }}                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes {{ cookiecutter.module_name }} a Python module
     │   │
     │   ├── data           <- Scripts to download or generate data
     │   │
@@ -81,7 +81,8 @@ The directory structure of your new project looks like this:
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     |
     ├── Dockerfile         <- Dockerfile with settings to run scripts in Docker container
-    ├── *.dvc              <- DVC files to run each stage of the model in DAG style; see dvc.org
+    ├── dvc.yaml           <- DVC pipeline; see dvc.org
+    ├── params.yaml        <- Parameter values (things like hyperparameters) used by DVC pipeline
     ├── setup.cfg          <- config file with settings for running pylint, flake8 and bandit
     └── pytest.ini         <- config file with settings for running pytest
 ```

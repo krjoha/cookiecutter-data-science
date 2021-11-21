@@ -1,7 +1,0 @@
-md5: dd128a1ca15826f5f6b874ba819accf7
-cmd: python -m src.data.run
-deps:
-- md5: bfc81c8ba4ed69265e3a967e5705de47
-  path: src/data/load_data.py
-- md5: 4a7570dada6c52d549685ad848968fe6
-  path: src/data/run.py
