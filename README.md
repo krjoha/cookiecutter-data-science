@@ -7,6 +7,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 - add [DVC](https://dvc.org/) and [MLFlow](https://mlflow.org/) requirement (allows reproducible and trackable experiments run)
 - add pylint, flake8 and bandit support
 - add pytest config file
+- add docker support
 
 
 #### [Original project homepage](http://drivendata.github.io/cookiecutter-data-science/)
